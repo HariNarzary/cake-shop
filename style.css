@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+}
+
+header {
+    height: 60px;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list{
+        display: none;
+    }
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    background: url(https://thumbs.dreamstime.com/b/wide-variety-cakes-bakery-stand-design-background-instagram-facebook-wall-painting-ai-generative-photo-art-wallpaper-323214522.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    color: whitesmoke;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0 0;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.search_box {
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_box input {
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.search_box button {
+    padding: 10px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    background-color: rgb(245, 37, 9);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* ........cake section...... */
+.cake_{
+    padding: 50px 0;
+}
+.cake_ h1{
+    text-align: center;
+    margin: 30px;
+    font-size: 28px;
+
+}
+.cakes_section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+
+.cakes{
+    background: white;
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    overflow: hidden;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.2);
+}
+
+.cakes img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cakes h2{
+    font-size: 22px;
+    padding: 20px;
+}
+
+.cakes p{
+    font-size: 18px;
+    padding: 20px;
+}
+
+.cakes a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: darkslategray;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+footer{
+    background: darkslategray;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.menu{
+    font-size: 24px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+
+}
+@media only screen and (min-width: 768px){
+    .menu{
+        display: none;
+    }
+    .nav-list{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hero h2{
+        font-size: 28px;
+    }
+    .hero p{
+        font-size: 15px;
+    }
+}
